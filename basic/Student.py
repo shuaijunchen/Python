@@ -17,13 +17,19 @@ class Student(object):
 		else:
 			return 'C'
 
+	def set_score(self, score):
+		self.__score = score
+
+	def get_score(self):
+		return self.__score
+
 bart = Student('Bart Zhang', 78)
 # print bart.name
 # print bart.score
 bart.print_score()
 print bart.get_grade()
 
-print bart.score
-# bart.score = 90
 # print bart.score
+bart.set_score(90)
+print bart.get_score()
 
