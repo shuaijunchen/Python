@@ -6,11 +6,11 @@ class Student(object):
 		self.name = name
 		self.score = score
 
-def print_score(std):
-	print '%s %s' % (std.name, std.score)
+	def print_score(self):
+		print '%s %s' % (self.name, self.score)
 
 bart = Student('Bart Zhang', 78)
 # print bart.name
 # print bart.score
-print_score(bart)
+bart.print_score()
 
