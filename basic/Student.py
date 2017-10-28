@@ -23,7 +23,7 @@ bart = Student('Bart Zhang', 78)
 bart.print_score()
 print bart.get_grade()
 
-# print bart.score
+print bart.score
 # bart.score = 90
 # print bart.score
 
