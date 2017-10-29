@@ -16,6 +16,10 @@ class Cat(Animal):
 	def run(self):
 		print 'Cat is running...'
 
+class Tortoise(Animal):
+	def run(self):
+		print 'Tortoise is running...'
+
 dog = Dog()
 dog.run()
 
@@ -27,3 +31,11 @@ print isinstance(cat, Animal)
 
 a = list()
 print isinstance(a, Animal)
+
+def run_twice(animal):
+	animal.run()
+	animal.run()
+
+run_twice(Dog())
+run_twice(Cat())
+run_twice(Tortoise())
