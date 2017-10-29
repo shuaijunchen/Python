@@ -21,3 +21,9 @@ dog.run()
 
 cat = Cat()
 cat.run()
+
+print isinstance(dog, Animal)
+print isinstance(cat, Animal)
+
+a = list()
+print isinstance(a, Animal)
