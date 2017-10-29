@@ -6,10 +6,15 @@ class Animal(object):
 		print 'Animal is running...'
 
 class Dog(Animal):
-	pass
+	def run(self):
+		print 'Dog is running...'
+
+	def eat(self):
+		print 'Eating meat...'
 
 class Cat(Animal):
-	pass
+	def run(self):
+		print 'Cat is running...'
 
 dog = Dog()
 dog.run()
